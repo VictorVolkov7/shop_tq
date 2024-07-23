@@ -1,3 +1,4 @@
+from drf_spectacular.utils import extend_schema
 from rest_framework import status
 from rest_framework.generics import ListAPIView, DestroyAPIView, get_object_or_404
 from rest_framework.permissions import IsAuthenticated
@@ -9,6 +10,9 @@ from cart.serializers.shopping_cart import CartSerializer, CartViewSerializer
 from products.models import Product
 
 
+@extend_schema(
+    summary="API endpoint that allows users to add items to their cart."
+)
 class CartAddItemAPIView(APIView):
     """
     API endpoint that allows users to add items to their cart.
@@ -43,6 +47,9 @@ class CartAddItemAPIView(APIView):
         return Response({'cart': cart_data}, status=status.HTTP_200_OK)
 
 
+@extend_schema(
+    summary="API endpoint that allows user to update their cart."
+)
 class CartRemoveItemAPIView(APIView):
     """
     API endpoint that allows user to update their cart.
@@ -78,6 +85,9 @@ class CartRemoveItemAPIView(APIView):
         return Response({'cart': cart_data}, status=status.HTTP_200_OK)
 
 
+@extend_schema(
+    summary="API endpoint for viewing the cart."
+)
 class CartListAPIView(ListAPIView):
     """
     API endpoint for viewing the cart.
@@ -89,6 +99,9 @@ class CartListAPIView(ListAPIView):
         return ShoppingCart.objects.filter(user=self.request.user)
 
 
+@extend_schema(
+    summary="API endpoint for clearing a cart."
+)
 class CartDeleteAPIView(DestroyAPIView):
     """
     API endpoint for clearing a cart.

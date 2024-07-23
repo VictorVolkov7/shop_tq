@@ -1,3 +1,4 @@
+from drf_spectacular.utils import extend_schema
 from rest_framework import generics
 from rest_framework.permissions import AllowAny
 
@@ -6,6 +7,9 @@ from categories.paginators import CategoryPaginator
 from categories.serializers.category import CategorySerializer
 
 
+@extend_schema(
+    summary="API endpoint to view a list of categories."
+)
 class CategoryListAPIView(generics.ListAPIView):
     """
     API endpoint to view a list of categories.
