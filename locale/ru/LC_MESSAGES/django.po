@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-23 18:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: cart/models.py:15 cart/models.py:49 products/models.py:57
+msgid "Product"
+msgstr "Продукт"
+
+#: cart/models.py:20
+msgid "Cart"
+msgstr "Корзина"
+
+#: cart/models.py:24
+msgid "Quantity"
+msgstr "Количество"
+
+#: cart/models.py:31
+msgid "Cart item"
+msgstr "Продукт в корзине"
+
+#: cart/models.py:32
+msgid "Cart items"
+msgstr "Продукты в корзине"
+
+#: cart/models.py:43 users/models.py:24
+msgid "User"
+msgstr "Пользователь"
+
+#: cart/models.py:53
+msgid "Total quantity"
+msgstr "Общее количество"
+
+#: cart/models.py:59
+msgid "Total cost"
+msgstr "Общая стоимость"
+
+#: cart/models.py:79
+msgid "Shopping cart"
+msgstr "Корзина"
+
+#: cart/models.py:80
+msgid "Shopping carts"
+msgstr "Корзины"
+
+#: categories/models.py:12 categories/models.py:42
+msgid "Category name"
+msgstr "Название категории"
+
+#: categories/models.py:18 categories/models.py:48 products/models.py:20
+msgid "Slug"
+msgstr "Slug"
+
+#: categories/models.py:24 categories/models.py:54
+msgid "Image"
+msgstr "Изображение"
+
+#: categories/models.py:31 categories/models.py:60
+msgid "Category"
+msgstr "Категория"
+
+#: categories/models.py:32
+msgid "Categories"
+msgstr "Категории"
+
+#: categories/models.py:67
+msgid "Sub Category"
+msgstr "Подкатегория"
+
+#: categories/models.py:68
+msgid "Sub Categories"
+msgstr "Подкатегории"
+
+#: products/models.py:14
+msgid "Product name"
+msgstr "Название продукта"
+
+#: products/models.py:26
+msgid "Image small"
+msgstr "Изображение(м)"
+
+#: products/models.py:32
+msgid "Image medium"
+msgstr "Изображение(ср)"
+
+#: products/models.py:38
+msgid "Image large"
+msgstr "Изображение(б)"
+
+#: products/models.py:43
+msgid "Price"
+msgstr "Цена"
+
+#: products/models.py:50
+msgid "Sub category"
+msgstr "Подкатегория"
+
+#: products/models.py:58
+msgid "Products"
+msgstr "Продукты"
+
+#: users/models.py:14
+msgid "Email address"
+msgstr "Электронная почта"
+
+#: users/models.py:25
+msgid "Users"
+msgstr "Пользователи"
